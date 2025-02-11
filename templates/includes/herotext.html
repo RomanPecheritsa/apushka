@@ -1,0 +1,32 @@
+{% load static %}
+<section id="home" class="hero section dark-background">
+    <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        {% for hero in hero_texts %}
+            <div class="carousel-item {% if hero.is_active %} active {% endif %}">
+                <img src="{{ hero.photo.url }}" alt="">
+                <div class="carousel-container">
+                    <h2>{{ hero.title|safe }}<br></h2>
+                    <h5>{{ hero.text|safe }}</h5>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="#about" class="btn-get-started">Подробнее</a>
+                        </div>
+                        <div class="col-lg-3">
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="https://t.me/IrShink" class="btn-get-started">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+        <ol class="carousel-indicators"></ol>
+    </div>
+</section>

@@ -1,0 +1,100 @@
+{% load static %}
+<section id="about" class="about section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Добро пожаловать в мир глемпинга!</h2>
+    </div>
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-4 position-relative" data-aos="fade-up" data-aos-delay="200">
+                <img src="{% static 'img/about/about.jpg' %}" class="img-fluid" alt="about">
+            </div>
+
+            <div class="col-lg-8 content ps-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <h6>А-Пушка уникальное место в Рузском районе, всего в 90 км от Москвы. Здесь, вдали от городской суеты,
+                    вас окружает природа, лес и река. Мы предлагаем все необходимые условия для комфортного проживания в
+                    уединении. На территории находятся два домика в стиле А-фрейм, расположенные вдали друг от друга.
+                    Каждая зона отдыха ориентирована в противоположные стороны, гарантируя полное уединение и отсутствие
+                    соседей</h6>
+                <section id="services" class="services section">
+                    <div class="container">
+                        <div class="row gy-4">
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                                <div class="icon flex-shrink-0"><i class="bi bi-compass"></i></div>
+                                <div>
+                                    <h4 class="title">Уникальное расположение</h4>
+                                    <p class="description">Наши домики находятся в окружении леса, без заборов и шумных
+                                        соседей вокруг</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                                <div class="icon flex-shrink-0"><i class="bi bi-door-open"></i></div>
+                                <div>
+                                    <h4 class="title">Удаленное заселение</h4>
+                                    <p class="description">Мы позаботились о вашем комфорте — процесс заселения в домики
+                                        происходит удаленно</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                                <div class="icon flex-shrink-0"><i class="bi bi-p-circle"></i></div>
+                                <div>
+                                    <h4 class="title">Парковка</h4>
+                                    <p class="description">Для вашего удобства парковка расположена на небольшом
+                                        удалении от домиков</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                                <div class="icon flex-shrink-0"><i class="bi-tree"></i></div>
+                                <div>
+                                    <h4 class="title">Экологичность</h4>
+                                    <p class="description">Наши домики построены с использованием экологичных материалов
+                                        и гармонично вписываются в природу</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                                <div class="icon flex-shrink-0"><i class="bi-basket"></i></div>
+                                <div>
+                                    <h4 class="title">Локальная кухня</h4>
+                                    <p class="description">Вы можете заказать блюда из города Рузы и насладиться вкусной
+                                        едой прямо в домике, не покидая уединения с природой</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                                <div class="icon flex-shrink-0"><i class="bi-house-check"></i></div>
+                                <div>
+                                    <h4 class="title">Современные удобства</h4>
+                                    <p class="description">В домиках есть все необходимое: кухня, санузел, Wi-Fi, чтобы
+                                        отдых был максимально комфортным</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if about_cards %}
+<section id="our_product" class="team section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Что мы предоставляем</h2>
+    </div>
+    <div class="container">
+        <div class="row gy-4">
+            {% for card in about_cards %}
+                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                        <img src="{{ card.image.url }}" class="{{ card.title }}" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>{{ card.title }}</h4>
+                                <span>{{ card.description }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

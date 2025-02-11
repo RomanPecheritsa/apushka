@@ -1,0 +1,28 @@
+{% load static %}
+<footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about mb-5">
+                <a href="{% url 'rent_house:home' %}" class="logo d-flex align-items-center">
+                    <img src="{% static 'img/logo.png' %}" alt="logo">
+                </a>
+            </div>
+
+            <div class="col-lg-8 col-md-6 footer-links">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="#home" class="">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#our_product">Что мы предоставляем</a></li>
+                    <li><a href="#price">Стоимость</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#with_as">Рядом с нами</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>

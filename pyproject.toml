@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "apushka"
+version = "0.1.0"
+description = ""
+authors = ["pecheritsa <pecheritsa.roman@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1.5"
+isort = "^6.0.0"
+black = "^25.1.0"
+python-dotenv = "^1.0.1"
+pillow = "^11.1.0"
+psycopg2 = "^2.9.10"
+django-imagekit = "^5.0.0"
+pyheif = "^0.8.0"
+django-tinymce = "^4.1.0"
+pytils = "^0.4.1"
+django-imagefit = "^0.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
