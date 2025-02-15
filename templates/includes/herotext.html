@@ -3,7 +3,7 @@
     <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
         {% for hero in hero_texts %}
             <div class="carousel-item {% if hero.is_active %} active {% endif %}">
-                <img src="{{ hero.photo.url }}" alt="">
+                <img src="{{ hero.image.url }}" alt="">
                 <div class="carousel-container">
                     <h2>{{ hero.title|safe }}<br></h2>
                     <h5>{{ hero.text|safe }}</h5>

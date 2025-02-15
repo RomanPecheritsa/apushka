@@ -1,46 +1,31 @@
 {% load static %}
+{% if withas_cards %}
 <section id="with_as" class="team section">
     <div class="container section-title" data-aos="fade-up">
         <h2>Рядом с нами</h2>
     </div>
     <div class="container">
         <div class="row gy-4">
+            {% for card in withas_cards %}
             <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="member">
-                    <img src="{% static 'img/withus/water.png' %}" class="img-fluid" alt="">
+                    <img src="{{ card.image.url }}" class="img-fluid" alt="{{ card.title }}">
                     <div class="member-info">
                         <div class="member-info-content">
-                            <h4>Рузское водохранилище</h4>
+                            <h4>{{ card.title }}</h4>
+                            <span>{{ card.description }}</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="member">
-                    <img src="{% static 'img/withus/aero.png' %}" class="img-fluid" alt="">
-                    <div class="member-info">
-                        <div class="member-info-content">
-                            <h4>Аэродром Ватулино</h4>
-                        </div>
+                        {% if card.link %}
                         <div class="social">
-                            <a href="http://vatulino.ru" target="_blank"><i class="bi bi-link-45deg fs-3"></i></a>
+                            <a href="{{ card.link }}" target="_blank"><i class="bi bi-link-45deg fs-3"></i></a>
                         </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="member">
-                    <img src="{% static 'img/withus/animals.jpg' %}" class="img-fluid" alt="">
-                    <div class="member-info">
-                        <div class="member-info-content">
-                            <h4>Оленья ферма</h4>
-                        </div>
-                        <div class="social">
-                            <a href="http://zoooleni.ru" target="_blank"><i class="bi bi-link-45deg fs-3"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
+
         </div>
     </div>
 </section>
+{% endif %}

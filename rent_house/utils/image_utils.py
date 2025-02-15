@@ -4,6 +4,7 @@ import uuid
 from imagekit.models import ProcessedImageField
 from imagekit.processors import ResizeToFit
 from pilkit.processors import Transpose
+from slugify import slugify
 
 
 def upload_to(instance, filename):
@@ -17,7 +18,8 @@ def album_image_path(instance, filename):
     """Функция для формирования пути загрузки изображений альбома"""
     ext = filename.split(".")[-1]
     random_name = uuid.uuid4().hex[:8]
-    return f"albums/album_{instance.album.slug}/{random_name}.{ext}"
+    album_slug = slugify(instance.album.title)
+    return f"albums/album_{album_slug}/{random_name}.{ext}"
 
 
 def create_processed_image_field(upload_to, verbose_name="Фотография", help_text="Загрузите фотографию"):
