@@ -18,6 +18,7 @@ pyheif = "^0.8.0"
 django-tinymce = "^4.1.0"
 pytils = "^0.4.1"
 django-imagefit = "^0.8.1"
+python-slugify = "^8.0.4"
 
 
 [build-system]
