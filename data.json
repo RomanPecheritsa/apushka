@@ -1,0 +1,286 @@
+[
+{
+    "model": "rent_house.herotext",
+    "pk": 2,
+    "fields": {
+        "title": "Уютные дома в окружении природы",
+        "text": "Отдохните от городской суеты в комфортных домах A-Puska. Лес, тишина и свежий воздух – все для вашего уединения.",
+        "image": "herotext/2c1683e8.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "rent_house.herotext",
+    "pk": 7,
+    "fields": {
+        "title": "Дом вдали от города – ближе к себе",
+        "text": "Наслаждайтесь уединением и комфортом в окружении природы с A-Puska",
+        "image": "herotext/3e4575c3.jpg",
+        "is_active": false
+    }
+},
+{
+    "model": "rent_house.herotext",
+    "pk": 9,
+    "fields": {
+        "title": "Где природа становится домом",
+        "text": "Лесные пейзажи, уют и спокойствие ждут вас в A-Puska",
+        "image": "herotext/4b3bd619.JPG",
+        "is_active": false
+    }
+},
+{
+    "model": "rent_house.aboutcard",
+    "pk": 1,
+    "fields": {
+        "title": "Купель Фурако",
+        "description": "Без сомнения вам понравится понежиться в теплой купели, а цитрусы и хвоя создадут потрясающий аромат",
+        "image": "aboutcard/e5c42e33.jpg"
+    }
+},
+{
+    "model": "rent_house.aboutcard",
+    "pk": 2,
+    "fields": {
+        "title": "Оборудованная территория",
+        "description": "У нас можно пожарить на мангале мясо, рыбу, овощи, или посидеть вечером возле стола-очага в уютной атмосфере",
+        "image": "aboutcard/c7d07ff8.jpg"
+    }
+},
+{
+    "model": "rent_house.aboutcard",
+    "pk": 3,
+    "fields": {
+        "title": "В окружении потрясающих видов",
+        "description": "А-пушка находится в уникальном месте, в окружении с одной стороны густого леса, с другой просторого поля и реки Руза",
+        "image": "aboutcard/ad6ee948.jpg"
+    }
+},
+{
+    "model": "rent_house.aboutcard",
+    "pk": 4,
+    "fields": {
+        "title": "Комфорт",
+        "description": "Мы оборудовали домики качественной сантехникой и предоставляем все необходимые средства гигиены, вплоть до одноразовых зубных щеток",
+        "image": "aboutcard/1921c614.jpg"
+    }
+},
+{
+    "model": "rent_house.aboutcard",
+    "pk": 5,
+    "fields": {
+        "title": "Кухня",
+        "description": "На кухне сможете приготовить вкусный завтрак, для этого есть вся необходимая посуда, и кофемашина.",
+        "image": "aboutcard/1724ef17.jpg"
+    }
+},
+{
+    "model": "rent_house.aboutcard",
+    "pk": 6,
+    "fields": {
+        "title": "Удобные спальные места",
+        "description": "Домик расчитан до 4х человек. На первом удобный 1,5 спальный диван. На втором этаже ортопедический двуспальный матрас.",
+        "image": "aboutcard/fa215701.JPG"
+    }
+},
+{
+    "model": "rent_house.aboutcard",
+    "pk": 7,
+    "fields": {
+        "title": "Стильный интерьер",
+        "description": "Интерьер в стиле Бохо даст возможность привезти с отдыха множество атмосферных фотографий.",
+        "image": "aboutcard/bf638aa8.jpg"
+    }
+},
+{
+    "model": "rent_house.aboutcard",
+    "pk": 8,
+    "fields": {
+        "title": "Релакс",
+        "description": "Проведя время на А-пушке вы отдохнете телом и душой от шумного и быстрого мегаполиса",
+        "image": "aboutcard/3c1fd0ac.jpg"
+    }
+},
+{
+    "model": "rent_house.album",
+    "pk": 17,
+    "fields": {
+        "title": "Общий",
+        "is_active": true
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 81,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/cb21cc13.jpg"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 82,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/f760926b.jpg"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 83,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/c1060f98.jpg"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 86,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/149ef68c.JPG"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 87,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/27b787e3.JPG"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 88,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/7737a962.JPG"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 89,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/1c83a7b1.JPG"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 90,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/eb3d3a20.JPG"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 91,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/8c2e817d.JPG"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 92,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/c1e4bf3b.jpg"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 93,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/d2a2eb2e.jpg"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 94,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/af7768dd.jpg"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 95,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/a7b18815.jpg"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 96,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/d745f76d.jpg"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 97,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/a388d499.jpg"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 98,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/c147e4a2.jpg"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 99,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/9ec0b61c.jpg"
+    }
+},
+{
+    "model": "rent_house.photo",
+    "pk": 100,
+    "fields": {
+        "album": 17,
+        "image": "albums/album_obshchii/0fbc1aad.jpg"
+    }
+},
+{
+    "model": "rent_house.withuscard",
+    "pk": 1,
+    "fields": {
+        "title": "Рузское водохранилище",
+        "description": "На водохранилище есть несколько оборудованных пляжей. Можно взять напрокат сап или лодку",
+        "image": "withuscard/07266d69.jpg",
+        "link": null
+    }
+},
+{
+    "model": "rent_house.withuscard",
+    "pk": 2,
+    "fields": {
+        "title": "Аэродром Ватулино",
+        "description": "Сюда приезжают как профессиональные спортсмены так и новички. Можно прыгнуть с парашютом, можно полетать на легкомоторном самолёте",
+        "image": "withuscard/5d7ec5a7.jpg",
+        "link": "https://vatulino.ru/"
+    }
+},
+{
+    "model": "rent_house.withuscard",
+    "pk": 3,
+    "fields": {
+        "title": "Оленья ферма",
+        "description": "Уютный уголок природы, где можно пообщаться с благородными оленями, покормить их и насладиться атмосферой загородного уюта.",
+        "image": "withuscard/10c7ffbc.jpg",
+        "link": "http://zoooleni.ru"
+    }
+}
+]
