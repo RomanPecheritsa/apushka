@@ -15,7 +15,7 @@ class HomePageView(generic.TemplateView):
         album = Album.objects.filter(is_active=True).first()
 
         if album:
-            data["photos"] = album.photos.all().order_by("?")[:18]
+            data["photos"] = album.photos.all().order_by("?")[:16]
         else:
             data["photos"] = Photo.objects.none()
 
